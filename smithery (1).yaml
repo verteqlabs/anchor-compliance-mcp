@@ -1,0 +1,29 @@
+# Smithery configuration for Anchor Compliance MCP
+# Docs: https://smithery.ai/docs/config
+
+startCommand:
+  type: http
+  url: https://jrzfwnayhbkmyzieglmb.supabase.co/functions/v1/mcp-server
+
+metadata:
+  name: anchor-compliance
+  displayName: Anchor Compliance
+  description: AI-discoverable advertising and marketing compliance scanning for Australian businesses (ACCC, TGA, ASIC, AHPRA, ACMA).
+  homepage: https://anchorcompliance.io/mcp
+  repository: https://github.com/verteqlabs/anchor-compliance-mcp
+  license: MIT
+  categories:
+    - compliance
+    - marketing
+    - legal
+    - australia
+  tags:
+    - compliance
+    - advertising
+    - marketing
+    - australia
+    - regulation
+    - tga
+    - accc
+    - asic
+    - ahpra

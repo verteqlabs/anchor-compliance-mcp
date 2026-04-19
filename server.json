@@ -1,0 +1,28 @@
+{
+  "name": "anchor-compliance",
+  "displayName": "Anchor Compliance",
+  "description": "Scan websites and ad copy for Australian advertising compliance issues (ACCC, TGA, ASIC, AHPRA, ACMA). Returns risk scores, flagged phrases, and jurisdiction-specific guidelines on demand.",
+  "version": "1.1.0",
+  "homepage": "https://anchorcompliance.io/mcp",
+  "license": "MIT",
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://jrzfwnayhbkmyzieglmb.supabase.co/functions/v1/mcp-server"
+  },
+  "tools": [
+    {
+      "name": "scan_website_compliance",
+      "description": "Scans a public URL for advertising and marketing compliance issues across Australian regulatory frameworks. Returns indicative risk score, top issues, and a link to a full report."
+    },
+    {
+      "name": "check_ad_copy",
+      "description": "Analyses ad, social, or email copy for regulatory risk under Australian advertising law. Returns risk level, flagged phrases, and indicative suggested edits."
+    },
+    {
+      "name": "get_compliance_guidelines",
+      "description": "Returns a summary of advertising and marketing compliance guidelines for a given industry and jurisdiction (e.g. healthcare in AU, gambling in NSW)."
+    }
+  ],
+  "categories": ["compliance", "marketing", "legal"],
+  "tags": ["compliance", "advertising", "australia", "regulation", "tga", "accc", "asic", "ahpra"]
+}
